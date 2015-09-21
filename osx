@@ -1,0 +1,21 @@
+#!/usr/bin/env zsh
+
+# Install Homebrew unless it is already available.
+which brew &> /dev/null || {
+  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+}
+
+# Homebrew packages.
+brew install zsh
+
+brew install git mercurial
+
+brew install coreutils
+
+brew install lua
+brew install macvim --override-system-vim --with-lua
+
+brew install go
+
+brew update && brew upgrade
+brew doctor

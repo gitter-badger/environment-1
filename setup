@@ -8,7 +8,7 @@ for file in "$HERE"/*; do
   name="$(basename "$file")"
   dotname=".${name}"
 
-  if ! [[ "setup" =~ $name ]]; then
+  if ! [[ "setup osx" =~ $name ]]; then
     ln -sfnv ${file#$HOME/} "${HOME}/${dotname}"
   fi
 done
