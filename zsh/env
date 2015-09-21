@@ -2,3 +2,6 @@
 
 export EDITOR=subl
 export VISUAL=subl
+
+PATH="/usr/local/sbin:$PATH"
+export PATH
