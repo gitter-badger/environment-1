@@ -1,18 +1,16 @@
 setopt AUTO_CD
 
-autoload -U colors
-colors
-
-autoload -U promptinit
-promptinit
-
+autoload -U colors && colors
+autoload -U promptinit && promptinit
 autoload -Uz vcs_info
-zstyle ':vcs_info:*' enable git
+
 precmd() {
     vcs_info
 }
 
 setopt prompt_subst
+
+zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:git:*' check-for-changes true
 zstyle ':vcs_info:*'    formats "%{$fg[red]%}%b%{$reset_color%}:%r%{$fg[blue]%} %m%u%c%{$reset_color%} "
 zstyle ':vcs_info:*'    nvcsformats   ""
