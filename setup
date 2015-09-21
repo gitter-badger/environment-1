@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+HERE="$(cd "${0%/*}"; pwd)"
+
+cd "${HERE}" && pax -wrs'/(.*)/.${BASH_REMATCH[1]}/' * "${HOME}"
+
+for file in "$HERE"/*; do
+  name="$(basename "$file")"
+  dotname=".${name}"
+
+  if ! [[ "setup" =~ $name ]]; then
+    ln -sfnv ${file#$HOME/} "${HOME}/${dotname}"
+  fi
+done
