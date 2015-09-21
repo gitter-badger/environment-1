@@ -1,2 +1,4 @@
+#!/bin/bash
+
 export EDITOR=subl
 export VISUAL=subl

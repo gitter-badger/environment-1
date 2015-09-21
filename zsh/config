@@ -1,3 +1,5 @@
+#!/bin/bash
+
 setopt AUTO_CD
 
 autoload -U colors && colors
