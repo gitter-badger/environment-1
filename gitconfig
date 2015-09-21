@@ -23,11 +23,14 @@
 [alias]
   s = status
   l = ls-files
+  u = pull
+  p = push
   a = add .
   aa = add --all
   dc = diff --cached
   di = diff
   ci = commit
+  cim = commit -m
   cl = clone
   br = branch
   co = checkout
