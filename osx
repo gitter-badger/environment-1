@@ -5,17 +5,20 @@ which brew &> /dev/null || {
   ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
 }
 
-# Homebrew packages.
+# Shell stuff.
 brew install zsh
 
+# Core utilities.
 brew install git mercurial
-
 brew install coreutils
-
 brew install lua
 brew install macvim --override-system-vim --with-lua
 
+# Language specific stuff.
 brew install go
+
+# Extra utilities.
+brew tap gsamokovarov/jump && brew install jump
 
 brew update && brew upgrade
 brew doctor
