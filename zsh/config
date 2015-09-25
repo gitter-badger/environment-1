@@ -2,6 +2,14 @@
 
 setopt AUTO_CD
 
+# Completions
+
+autoload -U compinit && compinit
+
+zstyle ':completion:*:*:git:*' script ~/.zsh/completion/git
+
+# Prompt style
+
 autoload -U colors && colors
 autoload -U promptinit && promptinit
 autoload -Uz vcs_info
