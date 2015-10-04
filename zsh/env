@@ -3,5 +3,11 @@
 export EDITOR=subl
 export VISUAL=subl
 
+# Export PATH variable
 PATH="/usr/local/sbin:$PATH"
 export PATH
+
+# Export GOPATH variable
+GOPATH="$HOME/dev/projects/:$GOPATH"
+GOPATH="$HOME/dev/libraries/:$GOPATH"
+export GOPATH
