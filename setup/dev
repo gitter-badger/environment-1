@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Create dev directories
+mkdir "$HOME/dev"
+mkdir "$HOME/dev/personal"
+mkdir "$HOME/dev/projects"
+mkdir "$HOME/dev/libraries"
