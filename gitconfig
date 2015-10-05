@@ -40,6 +40,7 @@
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
   unstash = !git stash show -p | git apply -R
+  back = reset --soft HEAD^
 [push]
   default = tracking
 [branch]
