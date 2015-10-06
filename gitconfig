@@ -25,8 +25,9 @@
   l = ls-files
   u = pull
   p = push
-  a = add .
-  aa = add --all
+  a = add
+  aa = add .
+  all = add --all
   dc = diff --cached
   di = diff
   ci = commit
