@@ -21,5 +21,13 @@ brew install rbenv ruby-build
 # Extra utilities.
 brew tap gsamokovarov/jump && brew install jump
 
+# Cask let you install Mac applications distributed as binaries.
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+brew cask install alfred
+brew cask install iterm2
+brew cask install skype
+
 brew update && brew upgrade
 brew doctor
