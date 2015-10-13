@@ -5,9 +5,9 @@ export VISUAL=subl
 
 # Export PATH variable
 PATH="/usr/local/sbin:$PATH"
+PATH="$HOME/dev/go:$PATH"
 export PATH
 
 # Export GOPATH variable
-GOPATH="$HOME/dev/projects/:$GOPATH"
-GOPATH="$HOME/dev/libraries/:$GOPATH"
+GOPATH="$HOME/dev/go"
 export GOPATH
