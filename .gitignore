@@ -1,2 +1,3 @@
 # Ignore Vim bundles
 vim/bundle
+vim/.netrwhist
