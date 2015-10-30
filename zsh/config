@@ -8,6 +8,7 @@ autoload -U compinit && compinit
 
 zstyle ':completion:*:*:git:*' script ~/.zsh/completion/git
 . ~/.zsh/completion/go
+. ~/.zsh/completion/npm
 
 # Prompt style
 
