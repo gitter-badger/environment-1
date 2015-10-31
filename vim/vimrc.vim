@@ -15,6 +15,9 @@ NeoBundle 'ntpeters/vim-better-whitespace'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'fatih/vim-go'
+NeoBundle 'moll/vim-node'
+NeoBundle 'terryma/vim-multiple-cursors'
+NeoBundle 'majutsushi/tagbar'
 
 call neobundle#end()
 
