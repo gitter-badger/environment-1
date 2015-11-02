@@ -14,10 +14,12 @@ for file in "$ENVIRONMENT_DIR"/*; do
   name="$(basename "$file")"
   dotname=".${name}"
 
-  if ! [[ "setup" =~ $name ]]; then
+  if ! [[ "setup config" =~ $name ]]; then
     ln -sfnv ${file#$HOME/} "${HOME}/${dotname}"
   fi
 done
+
+ln -sfnv "${ENVIRONMENT_DIR}/config/terminator" "${HOME}/.config/terminator"
 
 # Install NeoBundle
 clone_git_repo "https://github.com/Shougo/neobundle.vim.git" ".vim/bundle/neobundle.vim"
