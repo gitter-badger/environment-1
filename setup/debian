@@ -1,0 +1,16 @@
+# Install Albert application launcher
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install albert
+
+# Install git
+sudo add-apt-repository ppa:git-core/ppa
+sudo apt-get update
+sudo apt-get install git
+
+# Install vim
+sudo apt-get install vim
+
+# Install terminator
+sudo apt-get install terminator
+
