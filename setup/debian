@@ -8,6 +8,9 @@ sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
 sudo apt-get install git
 
+# Install subversion
+sudo apt-get install subversion
+
 # Install vim
 sudo apt-get update
 sudo apt-get install vim
