@@ -12,9 +12,13 @@ sudo apt-get install git
 sudo apt-get update
 sudo apt-get install vim
 
-# Install terminator
+# Install st
 sudo apt-get update
-sudo apt-get install terminator
+sudo apt-get install libx11-dev libxext-dev libxft-dev fonts-inconsolata
+
+# Install tmux
+sudo apt-get update
+sudo apt-get install tmux
 
 # Install Go
 sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable
