@@ -3,6 +3,10 @@ sudo add-apt-repository ppa:nilarimogard/webupd8
 sudo apt-get update
 sudo apt-get install albert
 
+###
+## Verion control systems
+###
+
 # Install git
 sudo add-apt-repository ppa:git-core/ppa
 sudo apt-get update
@@ -10,6 +14,10 @@ sudo apt-get install git
 
 # Install subversion
 sudo apt-get install subversion
+
+###
+## Editor and terminal
+###
 
 # Install vim
 sudo apt-get update
@@ -19,8 +27,20 @@ sudo apt-get install vim
 sudo apt-get update
 sudo apt-get install tmux
 
+###
+## Programming languages and environments
+###
+
 # Install Go
 sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable
 sudo apt-get update
 sudo apt-get install golang
+
+###
+## Unix tools
+###
+
+# Install pax
+sudo apt-get update
+sudo apt-get install pax
 
