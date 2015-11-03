@@ -7,8 +7,8 @@ alias v="vim"
 alias g="git"
 
 # List files and directories.
+alias ls='ls -G --color=auto'
 alias l='ls -G'
-alias ls='ls -G'
 alias ll='ls -la'
 alias tree="ls -R | grep ":$" | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
 
@@ -16,3 +16,4 @@ alias grep='grep --color=auto'
 
 # Copy output of last command to clipboard.
 alias clip="fc -e -|pbcopy"
+
