@@ -11,3 +11,7 @@ export PATH
 # Export GOPATH variable
 GOPATH="$HOME/dev/go"
 export GOPATH
+
+# Export terminal-specific settings
+export TERM="xterm-256color"
+

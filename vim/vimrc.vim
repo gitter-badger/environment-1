@@ -18,14 +18,13 @@ NeoBundle 'fatih/vim-go'
 NeoBundle 'moll/vim-node'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'majutsushi/tagbar'
+NeoBundle 'chriskempson/base16-vim'
 
 call neobundle#end()
 
 filetype plugin indent on
 
 NeoBundleCheck
-
-colors phoenix
 
 " Configure Syntastic
 set statusline+=%#warningmsg#
@@ -38,4 +37,12 @@ let g:syntastic_check_on_wq = 0
 
 " Show line numbers
 set number
+
+" Configure solor scheme
+if $COLORTERM == 'gnome-terminal'
+  set t_Co=256
+endif
+let base16colorspace=256
+set background=dark
+colorscheme base16-flat
 
