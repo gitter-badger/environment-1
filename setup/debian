@@ -1,46 +1,43 @@
-# Install Albert application launcher
-sudo add-apt-repository ppa:nilarimogard/webupd8
-sudo apt-get update
-sudo apt-get install albert
+#!/usr/bin/env bash
+
+fetch() {
+  sudo add-apt-repository "$1"
+}
+
+install() {
+  sudo apt-get update
+  sudo apt-get install "$1"
+}
+
+# Install application launcher
+fetch ppa:nilarimogard/webupd8 && install albert
 
 ###
 ## Verion control systems
 ###
 
 # Install git
-sudo add-apt-repository ppa:git-core/ppa
-sudo apt-get update
-sudo apt-get install git
-
-# Install subversion
-sudo apt-get install subversion
+fetch ppa:git-core/ppa && install git
+install subversion
 
 ###
 ## Editor and terminal
 ###
 
-# Install vim
-sudo apt-get update
-sudo apt-get install vim
-
-# Install tmux
-sudo apt-get update
-sudo apt-get install tmux
+install vim
+install tmux
 
 ###
 ## Programming languages and environments
 ###
 
-# Install Go
-sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable
-sudo apt-get update
-sudo apt-get install golang
+# Install Go environment
+fetch ppa:ubuntu-lxc/lxd-stable && install golang
 
 ###
 ## Unix tools
 ###
 
-# Install pax
-sudo apt-get update
-sudo apt-get install pax
+# Install archiving utility
+install pax
 
