@@ -1,3 +1,7 @@
 # Ignore Vim bundles
 vim/bundle
 vim/.netrwhist
+
+# Ignore private configuration
+zsh/private
+
