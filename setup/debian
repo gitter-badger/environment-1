@@ -45,6 +45,9 @@ install postgresql postgresql-contrib
 ## Unix tools
 ###
 
+# Install build tools
+install build-essential
+
 # Install archiving utility
 install pax
 
