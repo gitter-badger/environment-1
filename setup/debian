@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 fetch() {
-  sudo add-apt-repository "$1"
+  sudo add-apt-repository "$@"
 }
 
 install() {
   sudo apt-get update
-  sudo apt-get install "$1"
+  sudo apt-get install "$@"
 }
 
 # Install application launcher
@@ -33,6 +33,9 @@ install tmux
 
 # Install Go environment
 fetch ppa:ubuntu-lxc/lxd-stable && install golang
+
+# Install PostgreSQL
+install postgresql postgresql-contrib
 
 ###
 ## Unix tools
