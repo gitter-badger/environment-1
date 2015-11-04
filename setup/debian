@@ -48,5 +48,8 @@ install postgresql postgresql-contrib
 # Install archiving utility
 install pax
 
+# Install URL data transfer utility
+install curl
+
 update_all
 
