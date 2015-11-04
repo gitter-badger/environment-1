@@ -2,5 +2,5 @@
 . ~/.zsh/functions
 . ~/.zsh/env
 . ~/.zsh/config
-. ~/.zsh/private
+[[ -a ~/.zsh/private ]] && . ~/.zsh/private
 
