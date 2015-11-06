@@ -19,6 +19,8 @@ NeoBundle 'moll/vim-node'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'chriskempson/base16-vim'
+NeoBundle 'Valloric/YouCompleteMe'
+NeoBundle 'boeckmann/vim-freepascal'
 
 call neobundle#end()
 
