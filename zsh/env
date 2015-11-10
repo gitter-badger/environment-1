@@ -1,7 +1,7 @@
 #!/bin/bash
 
-export EDITOR=subl
-export VISUAL=subl
+export EDITOR=vi
+export VISUAL=vi
 
 # Export PATH variable
 PATH="/usr/local/sbin:$PATH"
