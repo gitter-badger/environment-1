@@ -51,3 +51,5 @@ let base16colorspace=256
 set background=dark
 colorscheme base16-flat
 
+" Configure code format
+set tabstop=2
