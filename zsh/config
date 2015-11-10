@@ -41,3 +41,4 @@ bindkey ';5C' forward-word
 bindkey ';5D' backward-word
 
 eval "$(jump shell zsh)"
+eval "$(rbenv init -)"

@@ -12,6 +12,9 @@ export PATH
 GOPATH="$HOME/dev/go"
 export GOPATH
 
+# Export rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+
 # Export terminal-specific settings
 export TERM="xterm-256color"
 
