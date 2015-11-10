@@ -7,6 +7,7 @@ which brew &> /dev/null || {
 
 # Shell stuff.
 brew install zsh
+brew install tmux
 
 # Core utilities.
 brew install git mercurial
@@ -14,6 +15,7 @@ brew install coreutils
 brew install lua
 brew install ctags
 brew install macvim --override-system-vim --with-lua
+brew install cmake
 
 # Language specific stuff.
 brew install go
@@ -21,14 +23,6 @@ brew install rbenv ruby-build
 
 # Extra utilities.
 brew tap gsamokovarov/jump && brew install jump
-
-# Cask let you install Mac applications distributed as binaries.
-brew tap phinze/homebrew-cask
-brew install brew-cask
-
-brew cask install alfred
-brew cask install iterm2
-brew cask install skype
 
 brew update && brew upgrade
 brew doctor
