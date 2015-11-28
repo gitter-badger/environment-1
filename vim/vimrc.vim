@@ -53,3 +53,6 @@ colorscheme base16-flat
 
 " Configure code format
 set tabstop=2
+
+" Configure YCM
+let g:ycm_autoclose_preview_window_after_completion = 1
