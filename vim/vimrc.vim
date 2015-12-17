@@ -21,6 +21,7 @@ NeoBundle 'majutsushi/tagbar'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'boeckmann/vim-freepascal'
+NeoBundle 'tclem/vim-arduino'
 
 call neobundle#end()
 
