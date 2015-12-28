@@ -5,3 +5,8 @@ mcd() {
   mkdir -p "$1";
   cd "$1";
 }
+
+# Counting lines of code.
+cloc() {
+  find . -name "*$1" | xargs wc -l
+}
