@@ -12,16 +12,13 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Bundles
 NeoBundle 'ntpeters/vim-better-whitespace'
-NeoBundle 'scrooloose/syntastic'
 NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'fatih/vim-go'
-NeoBundle 'moll/vim-node'
 NeoBundle 'terryma/vim-multiple-cursors'
 NeoBundle 'majutsushi/tagbar'
 NeoBundle 'chriskempson/base16-vim'
 NeoBundle 'Valloric/YouCompleteMe'
 NeoBundle 'boeckmann/vim-freepascal'
-NeoBundle 'tclem/vim-arduino'
 
 call neobundle#end()
 
@@ -29,20 +26,11 @@ filetype plugin indent on
 
 NeoBundleCheck
 
-" Configure Syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
 " Map leader key
 let mapleader=","
 
-" Show line numbers
-set number
+" Don't display line numbers
+set nonumber
 
 " Configure solor scheme
 if $COLORTERM == 'gnome-terminal'
@@ -57,3 +45,19 @@ set tabstop=2
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion = 1
+
+" Tab shortcuts.
+nnoremap <C-L> gt
+nnoremap <C-H> gT
+
+" Tagbar
+nmap <C-T> :TagbarToggle<CR>
+
+" Go
+let g:go_highlight_functions=1
+let g:go_highlight_methods=1
+let g:go_highlight_structs=1
+let g:go_highlight_operators=1
+let g:go_highlight_build_constraints=1
+let g:go_fmt_fail_silently=1
+let g:go_fmt_command="goimports"
