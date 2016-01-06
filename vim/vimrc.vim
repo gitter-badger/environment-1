@@ -56,6 +56,9 @@ nnoremap <C-H> gT
 " Tagbar
 nmap <C-T> :TagbarToggle<CR>
 
+" Watch file system for changes.
+set autoread
+
 " Go
 let g:go_highlight_functions=1
 let g:go_highlight_methods=1
