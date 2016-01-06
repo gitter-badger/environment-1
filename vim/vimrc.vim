@@ -40,8 +40,11 @@ let base16colorspace=256
 set background=dark
 colorscheme base16-flat
 
-" Configure code format
-set tabstop=2
+" Configure file type formatting.
+if has('autocmd')
+  autocmd Filetype go
+    \ set noexpandtab tabstop=4 shiftwidth=4 softtabstop=4
+endif
 
 " Configure YCM
 let g:ycm_autoclose_preview_window_after_completion = 1
