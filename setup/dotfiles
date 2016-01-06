@@ -22,6 +22,9 @@ done
 # Install base16-shell
 clone_git_repo "https://github.com/chriskempson/base16-shell.git" ".config/base16-shell"
 
+# Install Tmux Plugin Manager
+clone_git_repo "https://github.com/tmux-plugins/tpm" ".tmux/plugins/tpm"
+
 # Install NeoBundle
 clone_git_repo "https://github.com/Shougo/neobundle.vim.git" ".vim/bundle/neobundle.vim"
 
