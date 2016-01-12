@@ -29,8 +29,8 @@ NeoBundleCheck
 " Map leader key
 let mapleader=","
 
-" Don't display line numbers
-set nonumber
+" Show line numbers.
+set number
 
 " Configure solor scheme
 if $COLORTERM == 'gnome-terminal'
