@@ -1,6 +1,10 @@
+# ZSH configuration.
+
+## Main shell configuration.
 . ~/.zsh/aliases
 . ~/.zsh/functions
-. ~/.zsh/env
-. ~/.zsh/config
-[[ -a ~/.zsh/private ]] && . ~/.zsh/private
+. ~/.zsh/environment
+. ~/.zsh/configuration
 
+## Private configuration is optional.
+[[ -a ~/.zsh/private ]] && . ~/.zsh/private

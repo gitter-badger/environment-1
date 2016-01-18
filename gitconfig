@@ -20,7 +20,7 @@
 [core]
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   editor = vi
-	excludesfile = /home/sgatev/.gitignore
+  excludesfile = /home/sgatev/.gitignore
 [alias]
   s = status
   l = ls-files

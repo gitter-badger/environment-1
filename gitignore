@@ -1,3 +1,6 @@
+# OS X configuration files.
+.DS\_Store
+
+# Temporary Vim files.
 *~
-*.swp
-*.swo
+*.sw?
