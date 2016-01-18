@@ -1,5 +1,7 @@
 # environment
 
+[![MIT License](http://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 **environment** packs all the tooling and configuration I need on a computer in order to program.
 
 ```bash
